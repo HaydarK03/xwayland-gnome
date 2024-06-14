@@ -1,4 +1,4 @@
-#icon instalation
+# icon instalation
 
 after instal gnome if the icons doesn't appear use this method
 1. download icon from [gnome look](https://www.gnome-look.org)
