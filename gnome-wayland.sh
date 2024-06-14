@@ -1,15 +1,15 @@
 #!/bin/bash
 
 echo 'Package maintener'
-echo '1. haydar kamilhaydar03@gmial.com'
+echo '1. haydar kamilhaydar03@gmail.com'
 echo '2. baihaqi baihaqia442@gmail.com'
-sleeps 2 
+sleep 2 
 
 # uninstall for xorg and xorg-server
-sudo pacman -Rc xorg xorg-server &&
+# sudo pacman -Rc xorg xorg-server &&
 
 # install gnome dependecies
-sudo pacman -S gnome xorg-xwayland xorg-xlsclients NetworkManager gnome-tweaks &&
+sudo pacman -S gnome xorg-xwayland xorg-xlsclients networkmanager gnome-tweaks &&
 
 # disable iwd
 sudo systemctl disable iwd.servide &&
