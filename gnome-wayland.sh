@@ -10,7 +10,9 @@ sleep 2
 
 # install gnome dependecies
 sudo pacman -S gnome xorg-xwayland xorg-xlsclients networkmanager gnome-tweaks &&
-
+# enable NetworkManager
+sudo systemctl enable NetworkManager && 
+sudo systemctl start NetworkManager &&
 # disable iwd
 sudo systemctl disable iwd.service &&
 sudo systemctl stop iwd.service &&
