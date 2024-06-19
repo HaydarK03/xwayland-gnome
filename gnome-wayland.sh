@@ -10,12 +10,12 @@ sleep 2
 
 # install gnome dependecies
 sudo pacman -S gnome xorg-xwayland xorg-xlsclients networkmanager gnome-tweaks &&
-# enable NetworkManager
-sudo systemctl enable NetworkManager && 
-sudo systemctl start NetworkManager &&
 # disable iwd
 sudo systemctl disable iwd.service &&
 sudo systemctl stop iwd.service &&
+# enable NetworkManager
+sudo systemctl enable NetworkManager && 
+sudo systemctl start NetworkManager &&
 
 #add xwayland gnome-session on tty
 echo 'if [[ -z $DISPLAY && $(tty) == /dev/tty1 && $XDG_SESSION_TYPE == tty ]]; then QT_QPA_PLATFORM=wayland XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session' >> ~/.bash_profile
