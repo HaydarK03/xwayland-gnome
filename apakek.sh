@@ -6,7 +6,7 @@ echo '2. baihaqi baihaqia442@gmail.com'
 sleep 2
 
 # install gnome dependecies
-sudo pacman -S gnome xorg-xwayland xorg-xlsclients networkmanager gnome-tweaks pipewire &&
+sudo pacman -S gnome xorg-xwayland xorg-xlsclients networkmanager gnome-tweaks pipewire sof-firmware&&
 	# disable iwd
 	sudo systemctl disable iwd.service &&
 	sudo systemctl stop iwd.service &&
