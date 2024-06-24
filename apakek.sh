@@ -20,7 +20,7 @@ sudo pacman -S gnome xorg-xwayland xorg-xlsclients networkmanager gnome-tweaks p
 	systemctl --user enable pipewire &&
 	cd /home &&
 	variableA=$(ls)
-sudo usermod -aG wheel "$variableA"
+	sudo usermod -aG wheel "$variableA"
 
 #add xwayland gnome-session on tty
 echo 'if [[ -z $DISPLAY && $(tty) == /dev/tty1 && $XDG_SESSION_TYPE == tty ]]; then QT_QPA_PLATFORM=wayland XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session' >>~/.bash_profile
